@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "age": 28,
+    "gender": "Female",
+    "phone": "+1-202-555-0143",
+    "address": "123 Maple Street, Springfield, IL",
+    "registeredDate": "2024-03-15T09:32:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "age": 34,
+    "gender": "Male",
+    "phone": "+1-202-555-0198",
+    "address": "456 Oak Avenue, Greenfield, WI",
+    "registeredDate": "2023-11-20T15:24:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "age": 22,
+    "gender": "Male",
+    "phone": "+1-202-555-0121",
+    "address": "789 Pine Lane, Austin, TX",
+    "registeredDate": "2024-01-10T11:10:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Diana King",
+    "email": "diana.king@example.com",
+    "age": 45,
+    "gender": "Female",
+    "phone": "+1-202-555-0185",
+    "address": "321 Birch Road, Denver, CO",
+    "registeredDate": "2022-12-05T08:45:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Ethan Davis",
+    "email": "ethan.davis@example.com",
+    "age": 31,
+    "gender": "Male",
+    "phone": "+1-202-555-0170",
+    "address": "654 Cedar Street, Miami, FL",
+    "registeredDate": "2023-07-22T14:20:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Fiona Clark",
+    "email": "fiona.clark@example.com",
+    "age": 29,
+    "gender": "Female",
+    "phone": "+1-202-555-0167",
+    "address": "987 Elm Avenue, Boston, MA",
+    "registeredDate": "2024-02-02T10:33:00Z"
+  },
+  {
+    "id": 7,
+    "name": "George Miller",
+    "email": "george.miller@example.com",
+    "age": 40,
+    "gender": "Male",
+    "phone": "+1-202-555-0110",
+    "address": "222 Spruce Street, Portland, OR",
+    "registeredDate": "2023-09-28T13:15:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Hannah Wilson",
+    "email": "hannah.wilson@example.com",
+    "age": 27,
+    "gender": "Female",
+    "phone": "+1-202-555-0149",
+    "address": "135 Willow Lane, Seattle, WA",
+    "registeredDate": "2024-04-01T09:10:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Ian Moore",
+    "email": "ian.moore@example.com",
+    "age": 36,
+    "gender": "Male",
+    "phone": "+1-202-555-0190",
+    "address": "468 Chestnut Avenue, Chicago, IL",
+    "registeredDate": "2023-05-18T16:55:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Jessica Taylor",
+    "email": "jessica.taylor@example.com",
+    "age": 24,
+    "gender": "Female",
+    "phone": "+1-202-555-0136",
+    "address": "791 Walnut Street, San Francisco, CA",
+    "registeredDate": "2023-08-30T15:05:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Kevin Anderson",
+    "email": "kevin.anderson@example.com",
+    "age": 33,
+    "gender": "Male",
+    "phone": "+1-202-555-0195",
+    "address": "864 Maple Avenue, Atlanta, GA",
+    "registeredDate": "2023-12-11T17:40:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Laura Martin",
+    "email": "laura.martin@example.com",
+    "age": 30,
+    "gender": "Female",
+    "phone": "+1-202-555-0182",
+    "address": "555 Oak Street, Dallas, TX",
+    "registeredDate": "2023-06-24T12:22:00Z"
+  },
+  {
+    "id": 13,
+    "name": "Michael White",
+    "email": "michael.white@example.com",
+    "age": 38,
+    "gender": "Male",
+    "phone": "+1-202-555-0154",
+    "address": "333 Birch Lane, New York, NY",
+    "registeredDate": "2023-11-09T14:10:00Z"
+  },
+  {
+    "id": 14,
+    "name": "Nina Harris",
+    "email": "nina.harris@example.com",
+    "age": 26,
+    "gender": "Female",
+    "phone": "+1-202-555-0160",
+    "address": "210 Cedar Street, Los Angeles, CA",
+    "registeredDate": "2024-05-06T09:55:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Oliver Lee",
+    "email": "oliver.lee@example.com",
+    "age": 41,
+    "gender": "Male",
+    "phone": "+1-202-555-0115",
+    "address": "777 Pine Road, Houston, TX",
+    "registeredDate": "2023-10-22T18:25:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Paula Walker",
+    "email": "paula.walker@example.com",
+    "age": 32,
+    "gender": "Female",
+    "phone": "+1-202-555-0138",
+    "address": "404 Oak Lane, Philadelphia, PA",
+    "registeredDate": "2023-04-14T11:42:00Z"
+  },
+  {
+    "id": 17,
+    "name": "Quinn Young",
+    "email": "quinn.young@example.com",
+    "age": 29,
+    "gender": "Male",
+    "phone": "+1-202-555-0177",
+    "address": "636 Spruce Street, Charlotte, NC",
+    "registeredDate": "2024-01-27T14:15:00Z"
+  },
+  {
+    "id": 18,
+    "name": "Rachel Hall",
+    "email": "rachel.hall@example.com",
+    "age": 28,
+    "gender": "Female",
+    "phone": "+1-202-555-0141",
+    "address": "911 Willow Avenue, San Diego, CA",
+    "registeredDate": "2023-09-01T09:05:00Z"
+  },
+  {
+    "id": 19,
+    "name": "Sam Wright",
+    "email": "sam.wright@example.com",
+    "age": 35,
+    "gender": "Male",
+    "phone": "+1-202-555-0109",
+    "address": "302 Chestnut Street, Austin, TX",
+    "registeredDate": "2023-11-18T13:45:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Tina Scott",
+    "email": "tina.scott@example.com",
+    "age": 27,
+    "gender": "Female",
+    "phone": "+1-202-555-0155",
+    "address": "850 Walnut Road, Portland, OR",
+    "registeredDate": "2024-03-08T10:30:00Z"
+  },
+  {
+    "id": 21,
+    "name": "Umar Green",
+    "email": "umar.green@example.com",
+    "age": 30,
+    "gender": "Male",
+    "phone": "+1-202-555-0127",
+    "address": "177 Elm Street, Miami, FL",
+    "registeredDate": "2023-07-28T12:10:00Z"
+  },
+  {
+    "id": 22,
+    "name": "Vicky Adams",
+    "email": "vicky.adams@example.com",
+    "age": 34,
+    "gender": "Female",
+    "phone": "+1-202-555-0189",
+    "address": "233 Maple Ave, Boston, MA",
+    "registeredDate": "2023-12-02T16:45:00Z"
+  },
+  {
+    "id": 23,
+    "name": "Will Baker",
+    "email": "will.baker@example.com",
+    "age": 31,
+    "gender": "Male",
+    "phone": "+1-202-555-0199",
+    "address": "689 Oak Street, Chicago, IL",
+    "registeredDate": "2024-02-19T14:50:00Z"
+  },
+  {
+    "id": 24,
+    "name": "Xena Ward",
+    "email": "xena.ward@example.com",
+    "age": 29,
+    "gender": "Female",
+    "phone": "+1-202-555-0133",
+    "address": "521 Birch Blvd, Seattle, WA",
+    "registeredDate": "2023-08-16T11:25:00Z"
+  },
+  {
+    "id": 25,
+    "name": "Yusuf Collins",
+    "email": "yusuf.collins@example.com",
+    "age": 33,
+    "gender": "Male",
+    "phone": "+1-202-555-0175",
+    "address": "412 Cedar Street, Denver, CO",
+    "registeredDate": "2023-10-30T15:05:00Z"
+  }
+]

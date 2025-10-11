@@ -1,8 +1,11 @@
 import express from "express";
+import morgan from "morgan";
 import toursRouter from "./v1/tours";
+import usersRouter from "./v1/users";
 
 const app = express();
 
+app.use(morgan("dev"));
 app.use(express.json());
 
 app.get("/api", (_req, res) => res.send("API Root is working"));
@@ -12,14 +15,15 @@ app.get("/api", (_req, res) => res.send("API Root is working"));
 // });
 
 app.use((req, _res, next) => {
-  console.log(`Request Method: ${req.method}, URL: ${req.url}`);
+  // console.log(`Request Method: ${req.method}, URL: ${req.url}`);
   next();
 });
 
-console.log("Mounting toursRouter at /api/v1/tours");
+// console.log("Mounting toursRouter at /api/v1/tours");
 
 // Mount tours router on /api/v1/tours
 app.use("/api/v1/tours", toursRouter);
+app.use("/api/v1/users", usersRouter);
 
 // Start server only if running locally (not on serverless platform)
 // Use this during local dev for listening on port 3000
