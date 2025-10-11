@@ -10,7 +10,7 @@ app.use(express.json());
 
 const tours = JSON.parse(
   fs.readFileSync(
-    path.join(__dirname, "../dev-data/data/tours-simple.json"),
+    path.join(__dirname, "../src/dev-data/data/tours-simple.json"),
     "utf-8"
   )
 );
