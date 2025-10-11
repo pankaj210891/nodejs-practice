@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import tours from "../src/dev-data/data/tours-simple.json";
+import tours from "../../src/dev-data/data/tours-simple.json";
 
 const router = express.Router();
 

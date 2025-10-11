@@ -1,5 +1,5 @@
 import express from "express";
-import toursRouter from "./tours";
+import toursRouter from "./v1/tours";
 
 const app = express();
 
