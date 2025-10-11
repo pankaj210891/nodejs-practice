@@ -1,20 +1,7 @@
 import express, { Request, Response } from "express";
-import * as fs from "fs";
-import path from "path";
+import tours from "../src/dev-data/data/tours-simple.json";
 
 const router = express.Router();
-
-const tours = JSON.parse(
-  fs.readFileSync(
-    path.join(
-      __dirname,
-      process.env.NODE_ENV == "production"
-        ? "../../src/dev-data/data/tours-simple.json"
-        : "../src/dev-data/data/tours-simple.json"
-    ),
-    "utf-8"
-  )
-);
 
 router.get("/", (req: Request, res: Response) => {
   res
