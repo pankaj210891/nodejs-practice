@@ -5,10 +5,18 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/api", (_req, res) => res.send("API Root is working"));
 // Simple root route to verify server is running
-app.get("/", (_req, res) => {
-  res.send("Server is running");
+// app.get("/", (_req, res) => {
+//   res.send("Server is running");
+// });
+
+app.use((req, _res, next) => {
+  console.log(`Request Method: ${req.method}, URL: ${req.url}`);
+  next();
 });
+
+console.log("Mounting toursRouter at /api/v1/tours");
 
 // Mount tours router on /api/v1/tours
 app.use("/api/v1/tours", toursRouter);
