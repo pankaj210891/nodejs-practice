@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-const PORT = 3000;
+// const PORT = 3000;
 
 const tours = JSON.parse(
   fs.readFileSync(
@@ -103,6 +103,10 @@ app.delete("/api/v1/tours/:id", (req: Request, res: Response) => {
   }
 });
 
-app.listen(PORT, "127.0.0.1", () => {
-  console.log(`Server Started Listening on port ${PORT}..`);
-});
+//  Commenting this as deploying on Vercel doesn't require this.
+
+// app.listen(PORT, "127.0.0.1", () => {
+//   console.log(`Server Started Listening on port ${PORT}..`);
+// });
+
+export default app;
