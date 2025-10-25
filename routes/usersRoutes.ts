@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { ObjectId } from "mongodb";
 import { getDb } from "../api";
 
-const getAllUsers = async (req: Request, res: Response) => {
+const deleteAllUsers = async (req: Request, res: Response) => {
   const db = await getDb();
 
   const userDbName = process.env.USER_DB_NAME;
@@ -12,7 +12,41 @@ const getAllUsers = async (req: Request, res: Response) => {
       .json({ status: "error", message: "USER_DB_NAME not configured" });
   }
 
-  const users = await db.collection(userDbName).find().toArray();
+  await db.collection(userDbName).deleteMany({});
+
+  res.status(200).json({
+    status: "success",
+    message: "Deleted all users successfully",
+  });
+};
+
+const getAllUsers = async (req: Request, res: Response) => {
+  console.log("req", JSON.stringify(req.query));
+
+  const db = await getDb();
+
+  const userDbName = process.env.USER_DB_NAME;
+  if (!userDbName) {
+    return res
+      .status(500)
+      .json({ status: "error", message: "USER_DB_NAME not configured" });
+  }
+
+  // Extract sorting parameters from query
+  const { sortBy, sortOrder } = req.query;
+
+  // Build sort object
+  const sortOptions: any = {};
+  if (sortBy) {
+    // sortOrder: 'asc' or 'desc' (default: 'asc')
+    sortOptions[sortBy as string] = sortOrder === "desc" ? -1 : 1;
+  }
+
+  const users = await db
+    .collection(userDbName)
+    .find()
+    .sort(sortOptions)
+    .toArray();
 
   res.status(200).json({
     status: "success",
@@ -160,9 +194,10 @@ async function getUserByName(req: Request, res: Response) {
 }
 
 export {
+  deleteAllUsers,
   deleteUserById,
   getAllUsers,
   getUserById,
-  updateUserById,
   getUserByName,
+  updateUserById,
 };
