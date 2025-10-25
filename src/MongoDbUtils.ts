@@ -4,6 +4,8 @@ import { MongoClient, Db } from "mongodb";
 const uri = process.env.MONGODB_CLUSTER_URL || "mongodb://localhost:27017";
 const dbName = process.env.DB_NAME;
 
+console.log("uri", uri);
+
 const client = new MongoClient(uri);
 let db: Db;
 
