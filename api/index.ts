@@ -1,9 +1,13 @@
+import dotenv from "dotenv";
 import express from "express";
+import { Db } from "mongodb";
+import morgan from "morgan";
 import { connectToDatabase } from "../src/MongoDbUtils";
 import toursRouter from "./v1/tours";
 import usersRouter from "./v1/users";
-import { Db } from "mongodb";
-import morgan from "morgan";
+
+// Load environment variables from .env file
+dotenv.config();
 
 const app = express();
 app.use(morgan("dev"));
